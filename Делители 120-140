@@ -1,0 +1,17 @@
+using System;
+class HelloWorld {
+ static int delnum(int n){
+ int c = 0;
+ for(var i = 1; i<=n; i++){
+ if(n%i == 0){
+ c+=1;
+          }
+      }
+ return c;
+  }
+ static void Main() {
+    for(var i = 120; i<140; i++){
+        Console.WriteLine($"{i} - {delnum(i)}");
+    }
+  }
+}
