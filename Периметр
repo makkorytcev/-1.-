@@ -1,0 +1,14 @@
+using System;
+class HelloWorld {
+    
+ static int Perimiter(int a, int b, int c){
+ return a+b+c;
+  }
+    
+ static void Main() {
+ int a = int.Parse(Console.ReadLine());
+ int b = int.Parse(Console.ReadLine());
+ int c = int.Parse(Console.ReadLine());
+ Console.WriteLine($"Ответ: {Perimiter(a,b,c)}");
+  }
+}
