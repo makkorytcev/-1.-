@@ -1,0 +1,22 @@
+using System;
+class HelloWorld {
+ static int delnum(int n){
+ int a = 0;
+ for(var i = 1; i<=n; i++){
+ if(n%i == 0){
+ a+=1;
+          }
+      }
+ return a;
+  }
+ static void Main() {
+    int n = Convert.ToInt32(Console.ReadLine());
+    for(var i = 1; i<=n; i++){
+        Console.Write(i);
+        for(var j = 0; j<delnum(i);j++){
+            Console.Write("+");
+        }
+    Console.WriteLine();
+    }
+  }
+}
